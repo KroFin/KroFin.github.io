@@ -106,24 +106,24 @@
                 <h2>Download or Guide</h2>
                 <hr>
                 <div class="card-deck">
-                    <div class="card border-0"><a href="img/chrome.png"><img src="img/chrome.png" class="card-img-top mb-2" alt=""></a>
+                    <div class="card border-0"><a href="img/chrome.png" download="chrome"><img src="img/chrome.png" class="card-img-top mb-2" alt="" onclick="DOWNLOAD_ALERT()"></a>
                         <div class="card-body">
                             <h5 class="text-lg-center">
                                 Chrome
                             </h5>
                         </div>
                     </div>
-                    <div class="card border-0"><a href="img/github.png" download="github"><img src="img/github.png" class="card-img-top mb-2" alt=""></a>
+                    <div class="card border-0"><a href="img/github.png" download="github"><img src="img/github.png" class="card-img-top mb-2" alt="" onclick="DOWNLOAD_ALERT()"></a>
                         <div class="card-body">
                             <h5 class="text-lg-center">
-                                Github
+                                Github for Windows(64bit)
                             </h5>
                         </div>
                     </div>
-                    <div class="card border-0"><a href="ed2k://|file|cn_windows_10_consumer_editions_version_1909_x64_dvd_76365bf8.iso|5381154816|6A56DE112B164EC054D1104C53F8F10B|/" download="Win10"><img src="img/win10.png" class="card-img-top mb-2" alt=""></a>
+                    <div class="card border-0"><a href="ed2k://|file|cn_windows_10_consumer_editions_version_1909_x64_dvd_76365bf8.iso|5381154816|6A56DE112B164EC054D1104C53F8F10B|/" download="Win10"><img src="img/win10.png" class="card-img-top mb-2" alt="" onclick="DOWNLOAD_ALERT"></a>
                         <div class="card-body">
                             <h5 class="text-lg-center">
-                                Windows10/7
+                                Windows10
                             </h5>
                         </div>
                     </div>
@@ -166,6 +166,12 @@
                 "vOffset": 0
             }
         });
+
+        function DOWNLOAD_ALERT() {
+            alert("下载成功，如果长时间没有开始下载请检查" +
+                "1.电脑是否拥有P2P下载软件" +
+                "2.浏览器请选择FireFox或者Chrome");
+        }
     </script>
 
     <!--WDNMD-->
